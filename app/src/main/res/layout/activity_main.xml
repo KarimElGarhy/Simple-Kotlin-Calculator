@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTxt_text"
+        android:hint="@string/enter_number"
+        style="@style/edit_text_style"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_1" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_2" />
+
+            <Button
+                style="@style/button_style"
+                android:id="@+id/btn_three"
+                android:onClick="operationFunction"
+                android:text="@string/btn_3" />
+
+            <Button
+                android:id="@+id/btn_div"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:text="@string/btn_div"
+                android:backgroundTint="#AEDA0707"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn_four"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_4" />
+
+            <Button
+                android:id="@+id/btn_five"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_5" />
+
+            <Button
+                android:id="@+id/btn_six"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_6" />
+
+            <Button
+                android:id="@+id/btn_minis"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:text="@string/btn_minis"
+                android:backgroundTint="#AEDA0707"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_7" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_8" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_9" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:text="@string/btn_plus"
+                android:backgroundTint="#AEDA0707"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_0" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_reset" />
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_dot" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:text="@string/btn_equal"
+                android:backgroundTint="#AEDA0707"/>
+
+            <Button
+                android:id="@+id/btn_multi"
+                android:onClick="operationFunction"
+                style="@style/button_style"
+                android:layout_marginEnd="@dimen/margin_8"
+                android:text="@string/btn_multi"
+                android:backgroundTint="#AEDA0707"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
